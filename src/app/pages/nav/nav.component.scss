@@ -1,0 +1,21 @@
+.rows{
+    display: flex;
+    flex-wrap: wrap;
+}
+[mat-button] {
+    text-transform: capitalize;
+  }
+  
+  [mat-button]:not(:last-child) {
+    margin-right: 16px;
+  }
+  
+  a[mat-button] {
+    font-size: xx-large;
+  }
+  
+  .active {
+    border-bottom: white 1px solid;
+    border-radius: 0;
+  }
+  

@@ -1,0 +1,34 @@
+<p>services-add works!</p>
+<div class =marg>
+<form [formGroup]="form" (ngSubmit)='save()'>
+    <h1>Services Add</h1>
+    <br>
+    <mat-form-field class="max-width">
+      <mat-label>Name</mat-label>
+      <textarea placeholder="" formControlName="name" matInput cdkTextareaAutosize
+        cdkAutosizeMinRows="2" cdkAutosizeMaxRows="5"></textarea>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="max-width">
+      <mat-label>Category</mat-label>
+      <input matInput placeholder="" focus formControlName="category" required>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="max-width">
+      <mat-label>Description</mat-label>
+      <textarea placeholder="LUL" formControlName="description" matInput cdkTextareaAutosize
+        cdkAutosizeMinRows="2" cdkAutosizeMaxRows="5"></textarea>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="max-width">
+      <mat-label>State("designed / active / reserved / inactive / terminated")</mat-label>
+      <textarea placeholder="designed / active / reserved / inactive / terminated" formControlName="state" matInput cdkTextareaAutosize
+        cdkAutosizeMinRows="2" cdkAutosizeMaxRows="5"></textarea>
+    </mat-form-field>
+    <div style="display: flex; justify-content: flex-end;">
+      <button mat-button  class="margin-right">MÉGSEM</button>
+      <br>
+      <button mat-button type="submit" class="margin-right" >FELVÉTEL</button>
+    </div>
+  </form>
+  </div>

@@ -1,0 +1,20 @@
+<mat-card *ngIf="services">
+    <mat-card-header>
+        <mat-card-title>
+            <div *ngIf="services" else elseBlock>
+                {{services.name}}
+            </div>
+            <ng-template #elseBlock>
+                <div> Ismeretlen név! </div>
+            </ng-template>
+            
+        </mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+    <p>{{services.category}}</p>
+    <p>{{services.description}}</p>
+    <p>{{services.state}}</p>
+    </mat-card-content>
+</mat-card>
+
